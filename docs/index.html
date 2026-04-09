@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wind Energy Forecast Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f7f9fc;
+      color: #1f2937;
+    }
 
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .prediction-value {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    canvas {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wind Energy Forecast Dashboard</h1>
+  <p>End-to-end MLOps pipeline for Aalborg wind energy prediction.</p>
+
+  <div class="card">
+    <h2>Latest Prediction</h2>
+    <p id="prediction-date">Loading date...</p>
+    <p class="prediction-value" id="prediction-value">Loading prediction...</p>
+  </div>
+
+  <div class="card">
+    <h2>Prediction History</h2>
+    <canvas id="predictionChart"></canvas>
+  </div>
+
+  <script>
+    async function loadPredictions() {
+      const response = await fetch("predictions.json");
+      const data = await response.json();
+
+      if (!data.length) {
+        document.getElementById("prediction-date").innerText = "No predictions available";
+        document.getElementById("prediction-value").innerText = "-";
+        return;
+      }
+
+      const latest = data[data.length - 1];
+      document.getElementById("prediction-date").innerText = `Date: ${latest.date}`;
+      document.getElementById("prediction-value").innerText = latest.predicted_energy_next_hour.toFixed(4);
+
+      const labels = data.map(row => row.date);
+      const values = data.map(row => row.predicted_energy_next_hour);
+
+      const ctx = document.getElementById("predictionChart").getContext("2d");
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: labels,
+          datasets: [{
+            label: "Predicted Energy Next Hour",
+            data: values,
+            borderWidth: 2,
+            fill: false
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            x: {
+              ticks: {
+                maxTicksLimit: 10
+              }
+            }
+          }
+        }
+      });
+    }
+
+    loadPredictions();
+  </script>
+</body>
+</html>
