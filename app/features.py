@@ -33,11 +33,13 @@ def create_features(df: pd.DataFrame) -> pd.DataFrame:
     df["wind_speed_80m_lag_1"] = df["wind_speed_80m"].shift(1)
     df["wind_speed_80m_lag_2"] = df["wind_speed_80m"].shift(2)
     df["wind_speed_80m_lag_3"] = df["wind_speed_80m"].shift(3)
+    df["wind_speed_80m_lag_24"] = df["wind_speed_80m"].shift(24)
 
     df["wind_speed_80m_roll_3"] = df["wind_speed_80m"].rolling(3).mean()
     df["wind_speed_80m_roll_6"] = df["wind_speed_80m"].rolling(6).mean()
 
     df["wind_speed_80m_cubed"] = df["wind_speed_80m"] ** 3
+    df["temp_wind_interaction"] = df["temperature_2m"] * df["wind_speed_80m"]
 
     df["theoretical_energy"] = df["wind_speed_80m"].apply(compute_theoretical_energy)
     df["target_energy_next_hour"] = df["theoretical_energy"].shift(-1)
