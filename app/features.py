@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 
-INPUT_PATH = Path("artifacts/processed/weather_clean.csv")
+INPUT_PATH = Path("artifacts/cleaned/weather_clean.csv")
 OUTPUT_PATH = Path("artifacts/features/weather_features.csv")
 OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
