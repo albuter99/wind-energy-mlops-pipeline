@@ -11,11 +11,11 @@ OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 
 def build_weather_summary(row: pd.Series) -> str:
-    wind_speed = row["wind_speed_80m"]
-    temperature = row["temperature_2m"]
-    pressure = row["surface_pressure"]
-    humidity = row["relative_humidity_2m"]
-    precipitation = row["precipitation"]
+    wind_speed = float(row["wind_speed_80m"])
+    temperature = float(row["temperature_2m"])
+    pressure = float(row["surface_pressure"])
+    humidity = float(row["relative_humidity_2m"])
+    precipitation = float(row["precipitation"])
 
     return (
         f"Current conditions in Aalborg show a wind speed of {wind_speed:.2f} m/s, "
@@ -26,7 +26,7 @@ def build_weather_summary(row: pd.Series) -> str:
 
 
 def build_recommendation(row: pd.Series, predicted_energy: float) -> str:
-    wind_speed = row["wind_speed_80m"]
+    wind_speed = float(row["wind_speed_80m"])
 
     if wind_speed < 3:
         return "Do not activate the turbines. Wind speed is too low for profitable operation."
@@ -39,8 +39,20 @@ def build_recommendation(row: pd.Series, predicted_energy: float) -> str:
 
 
 def generate_dashboard_data():
+    if not FEATURES_PATH.exists():
+        raise FileNotFoundError(f"Missing file: {FEATURES_PATH}")
+
+    if not PREDICTIONS_PATH.exists():
+        raise FileNotFoundError(f"Missing file: {PREDICTIONS_PATH}")
+
     features_df = pd.read_csv(FEATURES_PATH)
     predictions_df = pd.read_csv(PREDICTIONS_PATH)
+
+    if features_df.empty:
+        raise ValueError("features dataset is empty")
+
+    if predictions_df.empty:
+        raise ValueError("predictions dataset is empty")
 
     latest_feature_row = features_df.iloc[-1]
     latest_prediction_row = predictions_df.iloc[-1]
@@ -76,6 +88,11 @@ def generate_dashboard_data():
         json.dump(dashboard_data, f, indent=2, ensure_ascii=False)
 
     print(f"Dashboard data saved to: {OUTPUT_PATH}")
+    print(json.dumps(dashboard_data, indent=2, ensure_ascii=False)[:1000])
+
+
+if __name__ == "__main__":
+    generate_dashboard_data()
 
 
 if __name__ == "__main__":
