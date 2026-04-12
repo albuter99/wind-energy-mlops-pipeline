@@ -54,7 +54,7 @@ def generate_dashboard_data():
     if predictions_df.empty:
         raise ValueError("predictions dataset is empty")
 
-    # ✅ Use first future row, not the last one
+    # Use first future row as next-hour prediction
     next_feature_row = features_df.iloc[0]
     next_prediction_row = predictions_df.iloc[0]
 
@@ -65,17 +65,16 @@ def generate_dashboard_data():
     weather_summary = build_weather_summary(next_feature_row)
     recommendation = build_recommendation(next_feature_row, latest_prediction)
 
-    # Historical chart data
     historical = []
-for _, row in predictions_df.iterrows():
-    if pd.notna(row["predicted_energy_next_hour"]) and pd.notna(row["target_energy_next_hour"]):
-        historical.append({
-            "date": str(row["date"]),
-            "predicted_energy_next_hour": float(row["predicted_energy_next_hour"]),
-            "target_energy_next_hour": float(row["target_energy_next_hour"])
-        })
+    for _, row in predictions_df.iterrows():
+        if pd.notna(row["predicted_energy_next_hour"]) and pd.notna(row["target_energy_next_hour"]):
+            historical.append({
+                "date": str(row["date"]),
+                "predicted_energy_next_hour": float(row["predicted_energy_next_hour"]),
+                "target_energy_next_hour": float(row["target_energy_next_hour"])
+            })
 
-forecast = historical[:24]
+    forecast = historical[:24]
 
     dashboard_data = {
         "latest_prediction": latest_prediction,
@@ -94,5 +93,7 @@ forecast = historical[:24]
     print(json.dumps(dashboard_data, indent=2, ensure_ascii=False)[:1000])
 
 
+if __name__ == "__main__":
+    generate_dashboard_data()
 if __name__ == "__main__":
     generate_dashboard_data()
