@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 
 
-FEATURES_PATH = Path("artifacts/features/weather_features.csv")
+FEATURES_PATH = Path("artifacts/features/weather_forecast_features.csv")
 PREDICTIONS_PATH = Path("artifacts/predictions/predictions.csv")
 OUTPUT_PATH = Path("docs/dashboard_data.json")
 OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -18,10 +18,10 @@ def build_weather_summary(row: pd.Series) -> str:
     precipitation = float(row["precipitation"])
 
     return (
-        f"Current conditions in Aalborg show a wind speed of {wind_speed:.2f} m/s, "
+        f"Forecast conditions in Aalborg indicate a wind speed of {wind_speed:.2f} m/s, "
         f"temperature of {temperature:.2f} °C, surface pressure of {pressure:.2f} hPa, "
         f"relative humidity of {humidity:.2f}%, and precipitation of {precipitation:.2f} mm. "
-        f"These conditions are used to estimate next-hour theoretical wind energy output."
+        f"These forecast conditions are used to estimate next-hour theoretical wind energy output."
     )
 
 
@@ -49,21 +49,23 @@ def generate_dashboard_data():
     predictions_df = pd.read_csv(PREDICTIONS_PATH)
 
     if features_df.empty:
-        raise ValueError("features dataset is empty")
+        raise ValueError("forecast features dataset is empty")
 
     if predictions_df.empty:
         raise ValueError("predictions dataset is empty")
 
-    latest_feature_row = features_df.iloc[-1]
-    latest_prediction_row = predictions_df.iloc[-1]
+    # ✅ Use first future row, not the last one
+    next_feature_row = features_df.iloc[0]
+    next_prediction_row = predictions_df.iloc[0]
 
-    latest_prediction = float(latest_prediction_row["predicted_energy_next_hour"])
-    latest_target = float(latest_prediction_row["target_energy_next_hour"])
-    latest_date = str(latest_prediction_row["date"])
+    latest_prediction = float(next_prediction_row["predicted_energy_next_hour"])
+    latest_target = float(next_prediction_row["target_energy_next_hour"])
+    latest_date = str(next_prediction_row["date"])
 
-    weather_summary = build_weather_summary(latest_feature_row)
-    recommendation = build_recommendation(latest_feature_row, latest_prediction)
+    weather_summary = build_weather_summary(next_feature_row)
+    recommendation = build_recommendation(next_feature_row, latest_prediction)
 
+    # Historical chart data
     historical = []
     for _, row in predictions_df.iterrows():
         historical.append({
@@ -72,7 +74,8 @@ def generate_dashboard_data():
             "target_energy_next_hour": float(row["target_energy_next_hour"])
         })
 
-    forecast = historical[-24:]
+    # Forecast window for right-side chart
+    forecast = historical[:24]
 
     dashboard_data = {
         "latest_prediction": latest_prediction,
@@ -89,10 +92,6 @@ def generate_dashboard_data():
 
     print(f"Dashboard data saved to: {OUTPUT_PATH}")
     print(json.dumps(dashboard_data, indent=2, ensure_ascii=False)[:1000])
-
-
-if __name__ == "__main__":
-    generate_dashboard_data()
 
 
 if __name__ == "__main__":
