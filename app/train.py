@@ -9,9 +9,11 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.model_selection import train_test_split
 
 
-INPUT_PATH = Path("artifacts/features/weather_features.csv")
-MODEL_PATH = Path("artifacts/model.pkl")
+INPUT_PATH = Path("artifacts/features/weather_historical_features.csv")
+MODEL_PATH = Path("artifacts/models/model.pkl")
 METRICS_PATH = Path("artifacts/metrics/metrics.json")
+
+MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)
 METRICS_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 
@@ -29,7 +31,7 @@ def train_and_evaluate():
         "target_energy_next_hour"
     ])
 
-    # Train/test split
+    # Train/test split using only historical data
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, shuffle=False
     )
@@ -67,11 +69,11 @@ def train_and_evaluate():
             best_model = model
 
     # Save best model
-    MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)
     joblib.dump(best_model, MODEL_PATH)
 
     # Save metrics
     output = {
+        "training_dataset": str(INPUT_PATH),
         "best_model": best_model_name,
         "results": results
     }
