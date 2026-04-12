@@ -39,9 +39,8 @@ def preprocess_weather_data(df: pd.DataFrame, name: str) -> pd.DataFrame:
     print(f"\n[{name}] Missing values before cleaning:")
     print(df.isna().sum())
 
-    # 🔥 IMPORTANTE: no hacemos dropna directo
-    # usamos forward fill y backward fill para no perder filas
-    df = df.fillna(method="ffill").fillna(method="bfill")
+    # Fill missing values forward, then backward
+    df = df.ffill().bfill()
 
     print(f"\n[{name}] Missing values after cleaning:")
     print(df.isna().sum())
