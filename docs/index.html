@@ -101,6 +101,16 @@
       color: white;
     }
 
+    .error-box {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+      display: none;
+    }
+
     canvas {
       width: 100% !important;
       height: 360px !important;
@@ -133,6 +143,7 @@
         <strong>Recommendation:</strong>
         <p class="recommendation-text" id="recommendationText">Loading recommendation...</p>
       </div>
+      <div class="error-box" id="errorBox"></div>
     </div>
   </div>
 
@@ -158,14 +169,59 @@
     let historicalChartInstance = null;
     let forecastChartInstance = null;
 
-    async function loadDashboardData() {
-      const response = await fetch("dashboard_data.json");
-      dashboardData = await response.json();
+    function formatDate(dateString) {
+      const date = new Date(dateString);
 
-      renderTopCards();
-      renderHistoricalChart(24);
-      renderForecastChart();
-      activateButtons();
+      return new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Copenhagen",
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(date);
+    }
+
+    function formatShortDate(dateString) {
+      const date = new Date(dateString);
+
+      return new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Copenhagen",
+        day: "2-digit",
+        month: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(date);
+    }
+
+    function showError(message) {
+      const errorBox = document.getElementById("errorBox");
+      errorBox.style.display = "block";
+      errorBox.textContent = message;
+    }
+
+    async function loadDashboardData() {
+      try {
+        const response = await fetch("dashboard_data.json");
+
+        if (!response.ok) {
+          throw new Error(`Could not load dashboard_data.json (${response.status})`);
+        }
+
+        dashboardData = await response.json();
+
+        if (!dashboardData || !dashboardData.historical || !dashboardData.forecast) {
+          throw new Error("Dashboard data is incomplete.");
+        }
+
+        renderTopCards();
+        renderHistoricalChart(24);
+        renderForecastChart();
+        activateButtons();
+      } catch (error) {
+        console.error(error);
+        showError("Dashboard data could not be loaded. Please check that dashboard_data.json is being generated correctly.");
+      }
     }
 
     function renderTopCards() {
@@ -173,7 +229,7 @@
         dashboardData.latest_prediction.toFixed(4);
 
       document.getElementById("latestDate").textContent =
-        `Date: ${dashboardData.latest_date}`;
+        `Date: ${formatDate(dashboardData.latest_date)}`;
 
       document.getElementById("latestTarget").textContent =
         `Latest target: ${dashboardData.latest_target.toFixed(4)}`;
@@ -188,7 +244,7 @@
     function renderHistoricalChart(hours) {
       const historical = dashboardData.historical.slice(-hours);
 
-      const labels = historical.map(row => row.date);
+      const labels = historical.map(row => formatShortDate(row.date));
       const predicted = historical.map(row => row.predicted_energy_next_hour);
       const target = historical.map(row => row.target_energy_next_hour);
 
@@ -219,6 +275,7 @@
         },
         options: {
           responsive: true,
+          maintainAspectRatio: false,
           plugins: {
             legend: {
               position: "top"
@@ -227,7 +284,9 @@
           scales: {
             x: {
               ticks: {
-                maxTicksLimit: 10
+                maxTicksLimit: 8,
+                maxRotation: 0,
+                minRotation: 0
               }
             }
           }
@@ -238,7 +297,7 @@
     function renderForecastChart() {
       const forecast = dashboardData.forecast;
 
-      const labels = forecast.map(row => row.date);
+      const labels = forecast.map(row => formatShortDate(row.date));
       const predicted = forecast.map(row => row.predicted_energy_next_hour);
 
       const ctx = document.getElementById("forecastChart").getContext("2d");
@@ -261,6 +320,7 @@
         },
         options: {
           responsive: true,
+          maintainAspectRatio: false,
           plugins: {
             legend: {
               position: "top"
@@ -269,7 +329,9 @@
           scales: {
             x: {
               ticks: {
-                maxTicksLimit: 8
+                maxTicksLimit: 8,
+                maxRotation: 0,
+                minRotation: 0
               }
             }
           }
