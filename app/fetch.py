@@ -65,7 +65,7 @@ def fetch_historical_data():
         "latitude": 57.048,
         "longitude": 9.9187,
         "hourly": HOURLY_VARIABLES,
-        "timezone": "Europe/Copenhagen",
+        "timezone": "Europe/Berlin",
         "past_days": 92,
         "forecast_days": 0
     }
