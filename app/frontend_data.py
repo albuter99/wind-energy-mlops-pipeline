@@ -1,5 +1,7 @@
 import json
 from pathlib import Path
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 
@@ -8,6 +10,8 @@ FEATURES_PATH = Path("artifacts/features/weather_forecast_features.csv")
 PREDICTIONS_PATH = Path("artifacts/predictions/predictions.csv")
 OUTPUT_PATH = Path("docs/dashboard_data.json")
 OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+TIMEZONE = ZoneInfo("Europe/Copenhagen")
 
 
 def build_weather_summary(row: pd.Series) -> str:
@@ -25,17 +29,34 @@ def build_weather_summary(row: pd.Series) -> str:
     )
 
 
-def build_recommendation(row: pd.Series, predicted_energy: float) -> str:
+def build_recommendation(row: pd.Series, predicted_energy: float) -> tuple[str, str]:
     wind_speed = float(row["wind_speed_80m"])
 
     if wind_speed < 3:
-        return "Do not activate the turbines. Wind speed is too low for profitable operation."
+        return (
+            "Do not activate the turbines. Wind speed is too low for profitable operation.",
+            "danger",
+        )
     elif wind_speed >= 25:
-        return "Do not activate the turbines. Wind speed is too high and may exceed the safe operating range."
+        return (
+            "Do not activate the turbines. Wind speed is too high and may exceed the safe operating range.",
+            "danger",
+        )
     elif predicted_energy < 0.15:
-        return "Activation is not recommended. Predicted theoretical energy is too low."
+        return (
+            "Activation is not recommended. Predicted theoretical energy is too low.",
+            "warning",
+        )
     else:
-        return "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient."
+        return (
+            "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
+            "success",
+        )
+
+
+def get_next_full_hour(now_dt: datetime) -> datetime:
+    rounded = now_dt.replace(minute=0, second=0, microsecond=0)
+    return rounded + timedelta(hours=1)
 
 
 def generate_dashboard_data():
@@ -54,16 +75,32 @@ def generate_dashboard_data():
     if predictions_df.empty:
         raise ValueError("predictions dataset is empty")
 
-    # Use first future row as next-hour prediction
-    next_feature_row = features_df.iloc[0]
-    next_prediction_row = predictions_df.iloc[0]
+    features_df["date"] = pd.to_datetime(features_df["date"], utc=True)
+    predictions_df["date"] = pd.to_datetime(predictions_df["date"], utc=True)
 
-    latest_prediction = float(next_prediction_row["predicted_energy_next_hour"])
-    latest_target = float(next_prediction_row["target_energy_next_hour"])
-    latest_date = str(next_prediction_row["date"])
+    now_cph = datetime.now(TIMEZONE)
+    next_hour_cph = get_next_full_hour(now_cph)
+    next_hour_utc = next_hour_cph.astimezone(ZoneInfo("UTC"))
 
-    weather_summary = build_weather_summary(next_feature_row)
-    recommendation = build_recommendation(next_feature_row, latest_prediction)
+    # Find the first prediction at or after the next full hour
+    valid_predictions = predictions_df[predictions_df["date"] >= next_hour_utc].copy()
+    valid_features = features_df[features_df["date"] >= next_hour_utc].copy()
+
+    if valid_predictions.empty or valid_features.empty:
+        raise ValueError("No valid forecast row found for the next full hour.")
+
+    selected_prediction_row = valid_predictions.iloc[0]
+    selected_feature_row = valid_features.iloc[0]
+
+    latest_prediction = float(selected_prediction_row["predicted_energy_next_hour"])
+    latest_target = float(selected_prediction_row["target_energy_next_hour"])
+    latest_date = str(selected_prediction_row["date"])
+
+    weather_summary = build_weather_summary(selected_feature_row)
+    recommendation, recommendation_level = build_recommendation(
+        selected_feature_row,
+        latest_prediction
+    )
 
     historical = []
     for _, row in predictions_df.iterrows():
@@ -74,7 +111,14 @@ def generate_dashboard_data():
                 "target_energy_next_hour": float(row["target_energy_next_hour"])
             })
 
-    forecast = historical[:24]
+    forecast = []
+    for _, row in valid_predictions.head(24).iterrows():
+        if pd.notna(row["predicted_energy_next_hour"]) and pd.notna(row["target_energy_next_hour"]):
+            forecast.append({
+                "date": str(row["date"]),
+                "predicted_energy_next_hour": float(row["predicted_energy_next_hour"]),
+                "target_energy_next_hour": float(row["target_energy_next_hour"])
+            })
 
     dashboard_data = {
         "latest_prediction": latest_prediction,
@@ -82,6 +126,9 @@ def generate_dashboard_data():
         "latest_date": latest_date,
         "weather_summary": weather_summary,
         "recommendation": recommendation,
+        "recommendation_level": recommendation_level,
+        "last_updated": now_cph.isoformat(),
+        "next_full_hour": next_hour_cph.isoformat(),
         "historical": historical,
         "forecast": forecast
     }
@@ -90,10 +137,8 @@ def generate_dashboard_data():
         json.dump(dashboard_data, f, indent=2, ensure_ascii=False)
 
     print(f"Dashboard data saved to: {OUTPUT_PATH}")
-    print(json.dumps(dashboard_data, indent=2, ensure_ascii=False)[:1000])
+    print(json.dumps(dashboard_data, indent=2, ensure_ascii=False)[:1200])
 
 
-if __name__ == "__main__":
-    generate_dashboard_data()
 if __name__ == "__main__":
     generate_dashboard_data()
