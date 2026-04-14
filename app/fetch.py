@@ -66,6 +66,7 @@ def fetch_historical_data():
         "longitude": 9.9187,
         "hourly": HOURLY_VARIABLES,
         "timezone": "Europe/Berlin",
+        "timezone_abbreviation": "CEST",
         "past_days": 92,
         "forecast_days": 0
     }
