@@ -83,7 +83,8 @@ def fetch_forecast_data():
         "latitude": 57.048,
         "longitude": 9.9187,
         "hourly": HOURLY_VARIABLES,
-        "timezone": "Europe/Copenhagen",
+        "timezone": "Europe/Berlin",
+        "timezone_abbreviation": "CEST",
         "forecast_days": 7
     }
 
