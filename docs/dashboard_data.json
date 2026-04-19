@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.6940141315531269,
-  "latest_target": 0.5992945919067773,
-  "latest_date": "2026-04-19 10:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 12.10 m/s, temperature of 9.70 °C, surface pressure of 1017.65 hPa, relative humidity of 84.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_prediction": 0.502886494662346,
+  "latest_target": 1.0,
+  "latest_date": "2026-04-19 11:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 10.59 m/s, temperature of 10.65 °C, surface pressure of 1017.65 hPa, relative humidity of 81.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
   "recommendation_level": "success",
-  "last_updated": "2026-04-19T11:51:35.027706+02:00",
-  "next_full_hour": "2026-04-19T12:00:00+02:00",
+  "last_updated": "2026-04-19T12:40:39.686062+02:00",
+  "next_full_hour": "2026-04-19T13:00:00+02:00",
   "historical": [
     {
       "date": "2026-04-18 22:00:00+00:00",
@@ -636,36 +636,36 @@
     {
       "date": "2026-04-24 03:00:00+00:00",
       "predicted_energy_next_hour": 0.1342782260211452,
-      "target_energy_next_hour": 0.3111190480161867
+      "target_energy_next_hour": 0.0407331775495604
     },
     {
       "date": "2026-04-24 04:00:00+00:00",
-      "predicted_energy_next_hour": 0.5957690598908129,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.1901121305321061,
+      "target_energy_next_hour": 0.1440102376898482
     },
     {
       "date": "2026-04-24 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.9135076260817664,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.6876127183544011,
+      "target_energy_next_hour": 0.4261225509570638
     },
     {
       "date": "2026-04-24 06:00:00+00:00",
-      "predicted_energy_next_hour": 0.99174120903362,
+      "predicted_energy_next_hour": 0.7050525085991686,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-04-24 07:00:00+00:00",
-      "predicted_energy_next_hour": 0.53,
+      "predicted_energy_next_hour": 0.52,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-04-24 08:00:00+00:00",
-      "predicted_energy_next_hour": 0.24,
+      "predicted_energy_next_hour": 0.25,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-04-24 09:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
+      "predicted_energy_next_hour": 0.03,
       "target_energy_next_hour": 0.0
     },
     {
@@ -760,17 +760,17 @@
     },
     {
       "date": "2026-04-25 04:00:00+00:00",
-      "predicted_energy_next_hour": 0.57,
+      "predicted_energy_next_hour": 0.58,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-04-25 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.71,
+      "predicted_energy_next_hour": 0.68,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-04-25 06:00:00+00:00",
-      "predicted_energy_next_hour": 0.46,
+      "predicted_energy_next_hour": 0.44,
       "target_energy_next_hour": 0.0
     },
     {
@@ -845,11 +845,6 @@
     }
   ],
   "forecast": [
-    {
-      "date": "2026-04-19 10:00:00+00:00",
-      "predicted_energy_next_hour": 0.6940141315531269,
-      "target_energy_next_hour": 0.5992945919067773
-    },
     {
       "date": "2026-04-19 11:00:00+00:00",
       "predicted_energy_next_hour": 0.502886494662346,
@@ -964,9 +959,14 @@
       "date": "2026-04-20 09:00:00+00:00",
       "predicted_energy_next_hour": 0.27,
       "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-04-20 10:00:00+00:00",
+      "predicted_energy_next_hour": 0.39,
+      "target_energy_next_hour": 0.0
     }
   ],
-  "wind_speed": 12.096214,
+  "wind_speed": 10.587918,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
