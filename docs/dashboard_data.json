@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.98,
-  "latest_target": 1.0,
-  "latest_date": "2026-06-23 16:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 18.20 m/s, temperature of 22.85 °C, surface pressure of 1019.70 hPa, relative humidity of 53.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_prediction": 0.8757193582512773,
+  "latest_target": 0.9403355830906202,
+  "latest_date": "2026-06-23 18:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 14.20 m/s, temperature of 20.75 °C, surface pressure of 1019.30 hPa, relative humidity of 55.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
   "recommendation_level": "success",
-  "last_updated": "2026-06-23T17:48:58.076710+02:00",
-  "next_full_hour": "2026-06-23T18:00:00+02:00",
+  "last_updated": "2026-06-23T19:56:16.606822+02:00",
+  "next_full_hour": "2026-06-23T20:00:00+02:00",
   "historical": [
     {
       "date": "2026-06-22 22:00:00+00:00",
@@ -115,7 +115,7 @@
     },
     {
       "date": "2026-06-23 19:00:00+00:00",
-      "predicted_energy_next_hour": 0.6994476821706024,
+      "predicted_energy_next_hour": 0.6985965479966881,
       "target_energy_next_hour": 1.0
     },
     {
@@ -230,12 +230,12 @@
     },
     {
       "date": "2026-06-24 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.77,
+      "predicted_energy_next_hour": 0.73,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-06-24 19:00:00+00:00",
-      "predicted_energy_next_hour": 0.83,
+      "predicted_energy_next_hour": 0.82,
       "target_energy_next_hour": 1.0
     },
     {
@@ -245,7 +245,7 @@
     },
     {
       "date": "2026-06-24 21:00:00+00:00",
-      "predicted_energy_next_hour": 0.11,
+      "predicted_energy_next_hour": 0.16,
       "target_energy_next_hour": 0.0
     },
     {
@@ -300,7 +300,7 @@
     },
     {
       "date": "2026-06-25 08:00:00+00:00",
-      "predicted_energy_next_hour": 0.62,
+      "predicted_energy_next_hour": 0.63,
       "target_energy_next_hour": 1.0
     },
     {
@@ -315,7 +315,7 @@
     },
     {
       "date": "2026-06-25 11:00:00+00:00",
-      "predicted_energy_next_hour": 0.71,
+      "predicted_energy_next_hour": 0.66,
       "target_energy_next_hour": 1.0
     },
     {
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-06-25 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.9,
+      "predicted_energy_next_hour": 0.86,
       "target_energy_next_hour": 1.0
     },
     {
@@ -846,23 +846,13 @@
   ],
   "forecast": [
     {
-      "date": "2026-06-23 16:00:00+00:00",
-      "predicted_energy_next_hour": 0.98,
-      "target_energy_next_hour": 1.0
-    },
-    {
-      "date": "2026-06-23 17:00:00+00:00",
-      "predicted_energy_next_hour": 1.0,
-      "target_energy_next_hour": 1.0
-    },
-    {
       "date": "2026-06-23 18:00:00+00:00",
       "predicted_energy_next_hour": 0.8757193582512773,
       "target_energy_next_hour": 0.9403355830906202
     },
     {
       "date": "2026-06-23 19:00:00+00:00",
-      "predicted_energy_next_hour": 0.6994476821706024,
+      "predicted_energy_next_hour": 0.6985965479966881,
       "target_energy_next_hour": 1.0
     },
     {
@@ -964,9 +954,19 @@
       "date": "2026-06-24 15:00:00+00:00",
       "predicted_energy_next_hour": 0.67,
       "target_energy_next_hour": 1.0
+    },
+    {
+      "date": "2026-06-24 16:00:00+00:00",
+      "predicted_energy_next_hour": 0.63,
+      "target_energy_next_hour": 1.0
+    },
+    {
+      "date": "2026-06-24 17:00:00+00:00",
+      "predicted_energy_next_hour": 0.68,
+      "target_energy_next_hour": 1.0
     }
   ],
-  "wind_speed": 18.202948,
+  "wind_speed": 14.203258,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
