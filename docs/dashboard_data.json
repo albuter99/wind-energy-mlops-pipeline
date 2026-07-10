@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.9770749693047156,
-  "latest_target": 1.0,
-  "latest_date": "2026-07-10 17:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 18.54 m/s, temperature of 27.00 °C, surface pressure of 1017.73 hPa, relative humidity of 40.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_prediction": 0.4113509193480125,
+  "latest_target": 0.0846428312924223,
+  "latest_date": "2026-07-10 19:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 7.45 m/s, temperature of 24.65 °C, surface pressure of 1018.41 hPa, relative humidity of 43.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
   "recommendation_level": "success",
-  "last_updated": "2026-07-10T18:25:14.823435+02:00",
-  "next_full_hour": "2026-07-10T19:00:00+02:00",
+  "last_updated": "2026-07-10T20:23:26.984606+02:00",
+  "next_full_hour": "2026-07-10T21:00:00+02:00",
   "historical": [
     {
       "date": "2026-07-09 22:00:00+00:00",
@@ -846,16 +846,6 @@
   ],
   "forecast": [
     {
-      "date": "2026-07-10 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.9770749693047156,
-      "target_energy_next_hour": 1.0
-    },
-    {
-      "date": "2026-07-10 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.5469329372460776,
-      "target_energy_next_hour": 0.1206780409908888
-    },
-    {
       "date": "2026-07-10 19:00:00+00:00",
       "predicted_energy_next_hour": 0.4113509193480125,
       "target_energy_next_hour": 0.0846428312924223
@@ -964,9 +954,19 @@
       "date": "2026-07-11 16:00:00+00:00",
       "predicted_energy_next_hour": 0.96,
       "target_energy_next_hour": 1.0
+    },
+    {
+      "date": "2026-07-11 17:00:00+00:00",
+      "predicted_energy_next_hour": 1.0,
+      "target_energy_next_hour": 0.354726513938051
+    },
+    {
+      "date": "2026-07-11 18:00:00+00:00",
+      "predicted_energy_next_hour": 0.5709942719364512,
+      "target_energy_next_hour": 0.009037168195936
     }
   ],
-  "wind_speed": 18.5422,
+  "wind_speed": 7.447527,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
