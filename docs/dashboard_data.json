@@ -1,31 +1,31 @@
 {
-  "latest_prediction": 0.95,
-  "latest_target": 1.0,
-  "latest_date": "2026-08-10 00:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 21.46 m/s, temperature of 18.30 °C, surface pressure of 1006.70 hPa, relative humidity of 84.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
-  "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
-  "recommendation_level": "success",
-  "last_updated": "2026-08-10T01:31:22.488405+02:00",
-  "next_full_hour": "2026-08-10T02:00:00+02:00",
+  "latest_prediction": 0.22,
+  "latest_target": 0.0,
+  "latest_date": "2026-08-10 02:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 26.08 m/s, temperature of 16.20 °C, surface pressure of 1006.29 hPa, relative humidity of 90.00%, and precipitation of 0.60 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "recommendation": "Do not activate the turbines. Wind speed is too high and may exceed the safe operating range.",
+  "recommendation_level": "danger",
+  "last_updated": "2026-08-10T03:49:17.654022+02:00",
+  "next_full_hour": "2026-08-10T04:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-09 22:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.12,
+      "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-09 23:00:00+00:00",
-      "predicted_energy_next_hour": 0.8600186088061613,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.03,
+      "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 00:00:00+00:00",
-      "predicted_energy_next_hour": 0.95,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.08,
+      "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 01:00:00+00:00",
-      "predicted_energy_next_hour": 0.78,
+      "predicted_energy_next_hour": 0.56,
       "target_energy_next_hour": 0.0
     },
     {
@@ -35,32 +35,32 @@
     },
     {
       "date": "2026-08-10 03:00:00+00:00",
-      "predicted_energy_next_hour": 0.17,
+      "predicted_energy_next_hour": 0.18,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 04:00:00+00:00",
-      "predicted_energy_next_hour": 0.01,
+      "predicted_energy_next_hour": 0.22,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-10 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.88,
+      "predicted_energy_next_hour": 0.63,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-10 06:00:00+00:00",
-      "predicted_energy_next_hour": 0.99,
+      "predicted_energy_next_hour": 0.98,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-10 07:00:00+00:00",
-      "predicted_energy_next_hour": 0.82,
+      "predicted_energy_next_hour": 0.91,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 08:00:00+00:00",
-      "predicted_energy_next_hour": 0.16,
+      "predicted_energy_next_hour": 0.17,
       "target_energy_next_hour": 0.0
     },
     {
@@ -105,12 +105,12 @@
     },
     {
       "date": "2026-08-10 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
+      "predicted_energy_next_hour": 0.01,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
+      "predicted_energy_next_hour": 0.01,
       "target_energy_next_hour": 0.0
     },
     {
@@ -120,7 +120,7 @@
     },
     {
       "date": "2026-08-10 20:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
+      "predicted_energy_next_hour": 0.01,
       "target_energy_next_hour": 0.0
     },
     {
@@ -130,7 +130,7 @@
     },
     {
       "date": "2026-08-10 22:00:00+00:00",
-      "predicted_energy_next_hour": 0.01,
+      "predicted_energy_next_hour": 0.0,
       "target_energy_next_hour": 0.0
     },
     {
@@ -160,7 +160,7 @@
     },
     {
       "date": "2026-08-11 04:00:00+00:00",
-      "predicted_energy_next_hour": 0.02,
+      "predicted_energy_next_hour": 0.01,
       "target_energy_next_hour": 0.0
     },
     {
@@ -185,62 +185,62 @@
     },
     {
       "date": "2026-08-11 09:00:00+00:00",
-      "predicted_energy_next_hour": 0.06,
+      "predicted_energy_next_hour": 0.28,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-11 10:00:00+00:00",
-      "predicted_energy_next_hour": 0.52,
+      "predicted_energy_next_hour": 0.83,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-11 11:00:00+00:00",
-      "predicted_energy_next_hour": 0.2,
+      "predicted_energy_next_hour": 0.78,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-11 12:00:00+00:00",
-      "predicted_energy_next_hour": 0.26,
-      "target_energy_next_hour": 0.0
-    },
-    {
-      "date": "2026-08-11 13:00:00+00:00",
-      "predicted_energy_next_hour": 0.11,
-      "target_energy_next_hour": 0.0
-    },
-    {
-      "date": "2026-08-11 14:00:00+00:00",
-      "predicted_energy_next_hour": 0.1,
-      "target_energy_next_hour": 0.0
-    },
-    {
-      "date": "2026-08-11 15:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
-      "target_energy_next_hour": 0.0
-    },
-    {
-      "date": "2026-08-11 16:00:00+00:00",
-      "predicted_energy_next_hour": 0.09,
-      "target_energy_next_hour": 0.0
-    },
-    {
-      "date": "2026-08-11 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.16,
-      "target_energy_next_hour": 0.0
-    },
-    {
-      "date": "2026-08-11 18:00:00+00:00",
       "predicted_energy_next_hour": 0.53,
       "target_energy_next_hour": 0.0
     },
     {
+      "date": "2026-08-11 13:00:00+00:00",
+      "predicted_energy_next_hour": 0.65,
+      "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-08-11 14:00:00+00:00",
+      "predicted_energy_next_hour": 0.25,
+      "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-08-11 15:00:00+00:00",
+      "predicted_energy_next_hour": 0.15,
+      "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-08-11 16:00:00+00:00",
+      "predicted_energy_next_hour": 0.08,
+      "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-08-11 17:00:00+00:00",
+      "predicted_energy_next_hour": 0.0,
+      "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-08-11 18:00:00+00:00",
+      "predicted_energy_next_hour": 0.5,
+      "target_energy_next_hour": 0.0
+    },
+    {
       "date": "2026-08-11 19:00:00+00:00",
-      "predicted_energy_next_hour": 0.61,
+      "predicted_energy_next_hour": 0.55,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-11 20:00:00+00:00",
-      "predicted_energy_next_hour": 0.22,
+      "predicted_energy_next_hour": 0.1,
       "target_energy_next_hour": 0.0
     },
     {
@@ -250,7 +250,7 @@
     },
     {
       "date": "2026-08-11 22:00:00+00:00",
-      "predicted_energy_next_hour": 0.33,
+      "predicted_energy_next_hour": 0.15,
       "target_energy_next_hour": 0.0
     },
     {
@@ -260,32 +260,32 @@
     },
     {
       "date": "2026-08-12 00:00:00+00:00",
-      "predicted_energy_next_hour": 0.31,
+      "predicted_energy_next_hour": 0.18,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-12 01:00:00+00:00",
-      "predicted_energy_next_hour": 0.72,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.86,
+      "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-12 02:00:00+00:00",
-      "predicted_energy_next_hour": 0.72,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.78,
+      "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-12 03:00:00+00:00",
-      "predicted_energy_next_hour": 0.59,
+      "predicted_energy_next_hour": 0.73,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 04:00:00+00:00",
-      "predicted_energy_next_hour": 0.86,
+      "predicted_energy_next_hour": 0.63,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.99,
+      "predicted_energy_next_hour": 0.96,
       "target_energy_next_hour": 1.0
     },
     {
@@ -295,272 +295,272 @@
     },
     {
       "date": "2026-08-12 07:00:00+00:00",
-      "predicted_energy_next_hour": 0.9992497113310026,
+      "predicted_energy_next_hour": 1.0,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 08:00:00+00:00",
-      "predicted_energy_next_hour": 0.9080410397128822,
+      "predicted_energy_next_hour": 0.9992497113310026,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 09:00:00+00:00",
-      "predicted_energy_next_hour": 0.9694752880636908,
+      "predicted_energy_next_hour": 0.9992497113310026,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 10:00:00+00:00",
-      "predicted_energy_next_hour": 0.9980825504164428,
+      "predicted_energy_next_hour": 1.0,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 11:00:00+00:00",
-      "predicted_energy_next_hour": 0.9910046850135508,
+      "predicted_energy_next_hour": 1.0,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 12:00:00+00:00",
-      "predicted_energy_next_hour": 0.985438590242897,
+      "predicted_energy_next_hour": 1.0,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 13:00:00+00:00",
-      "predicted_energy_next_hour": 0.8477733994906218,
+      "predicted_energy_next_hour": 1.0,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 14:00:00+00:00",
-      "predicted_energy_next_hour": 0.9124989898236204,
+      "predicted_energy_next_hour": 0.994747979317018,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 15:00:00+00:00",
-      "predicted_energy_next_hour": 0.9062722395046526,
+      "predicted_energy_next_hour": 0.9939976906480203,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 16:00:00+00:00",
-      "predicted_energy_next_hour": 0.962953036310042,
+      "predicted_energy_next_hour": 0.9939976906480203,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.9442003454200482,
+      "predicted_energy_next_hour": 0.9923770971550192,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.7202491569712111,
-      "target_energy_next_hour": 0.7957830442806282
+      "predicted_energy_next_hour": 0.9115199219366116,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 19:00:00+00:00",
-      "predicted_energy_next_hour": 0.429727536627971,
-      "target_energy_next_hour": 0.7433157595773382
+      "predicted_energy_next_hour": 0.7256688050613408,
+      "target_energy_next_hour": 0.5542087116421516
     },
     {
       "date": "2026-08-12 20:00:00+00:00",
-      "predicted_energy_next_hour": 0.528208801522541,
-      "target_energy_next_hour": 0.6394231597550992
+      "predicted_energy_next_hour": 0.4683180658071446,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 21:00:00+00:00",
-      "predicted_energy_next_hour": 0.5738165910013688,
-      "target_energy_next_hour": 0.436051774949011
+      "predicted_energy_next_hour": 0.7214382139477601,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 22:00:00+00:00",
-      "predicted_energy_next_hour": 0.5742633599022267,
-      "target_energy_next_hour": 0.5393087512860043
+      "predicted_energy_next_hour": 0.8736663415973888,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-12 23:00:00+00:00",
-      "predicted_energy_next_hour": 0.5844250700073753,
-      "target_energy_next_hour": 0.5058644595163756
+      "predicted_energy_next_hour": 0.8714729115413706,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-13 00:00:00+00:00",
-      "predicted_energy_next_hour": 0.5297897314931732,
-      "target_energy_next_hour": 0.2250109999763672
+      "predicted_energy_next_hour": 0.9405334169604712,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-13 01:00:00+00:00",
-      "predicted_energy_next_hour": 0.4038432664191809,
-      "target_energy_next_hour": 0.2108845227405678
+      "predicted_energy_next_hour": 0.8922402528866707,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-13 02:00:00+00:00",
-      "predicted_energy_next_hour": 0.3755501629489282,
-      "target_energy_next_hour": 0.2315480604686488
+      "predicted_energy_next_hour": 0.8707546932248058,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-13 03:00:00+00:00",
-      "predicted_energy_next_hour": 0.3770968950701815,
-      "target_energy_next_hour": 0.4105639342515276
+      "predicted_energy_next_hour": 0.4777181645328868,
+      "target_energy_next_hour": 0.700079361811515
     },
     {
       "date": "2026-08-13 04:00:00+00:00",
-      "predicted_energy_next_hour": 0.4756283656577075,
+      "predicted_energy_next_hour": 0.4697306554693251,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-13 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.7061871778633776,
+      "predicted_energy_next_hour": 0.7705126765842749,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-13 06:00:00+00:00",
-      "predicted_energy_next_hour": 0.9021061588878604,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.7756253700260555,
+      "target_energy_next_hour": 0.6362401781741919
     },
     {
       "date": "2026-08-13 07:00:00+00:00",
-      "predicted_energy_next_hour": 0.8530018606125033,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.4083842855519139,
+      "target_energy_next_hour": 0.4579023848269787
     },
     {
       "date": "2026-08-13 08:00:00+00:00",
-      "predicted_energy_next_hour": 0.6975049483317599,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.5021975630109261,
+      "target_energy_next_hour": 0.534380921195593
     },
     {
       "date": "2026-08-13 09:00:00+00:00",
-      "predicted_energy_next_hour": 0.793268856124412,
-      "target_energy_next_hour": 0.9470114919510834
+      "predicted_energy_next_hour": 0.601758895089422,
+      "target_energy_next_hour": 0.4652889990078506
     },
     {
       "date": "2026-08-13 10:00:00+00:00",
-      "predicted_energy_next_hour": 0.8093028609047017,
-      "target_energy_next_hour": 0.973492068302701
+      "predicted_energy_next_hour": 0.5491048121765875,
+      "target_energy_next_hour": 0.5164791318224019
     },
     {
       "date": "2026-08-13 11:00:00+00:00",
-      "predicted_energy_next_hour": 0.81816270165017,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.5458303978295888,
+      "target_energy_next_hour": 0.7178370776940552
     },
     {
       "date": "2026-08-13 12:00:00+00:00",
-      "predicted_energy_next_hour": 0.8189459062238637,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.6163333305531508,
+      "target_energy_next_hour": 0.8082547524136378
     },
     {
       "date": "2026-08-13 13:00:00+00:00",
-      "predicted_energy_next_hour": 0.8679642579619616,
+      "predicted_energy_next_hour": 0.5730971557499476,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-13 14:00:00+00:00",
-      "predicted_energy_next_hour": 0.9075832447838494,
+      "predicted_energy_next_hour": 0.912354362414418,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-13 15:00:00+00:00",
-      "predicted_energy_next_hour": 0.8427464101321472,
-      "target_energy_next_hour": 0.490595328181063
-    },
-    {
-      "date": "2026-08-13 16:00:00+00:00",
-      "predicted_energy_next_hour": 0.3541207867115735,
-      "target_energy_next_hour": 0.5478963144787953
-    },
-    {
-      "date": "2026-08-13 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.3538384161835115,
+      "predicted_energy_next_hour": 0.99507653897708,
       "target_energy_next_hour": 1.0
     },
     {
+      "date": "2026-08-13 16:00:00+00:00",
+      "predicted_energy_next_hour": 0.6733584188618894,
+      "target_energy_next_hour": 0.3894564526052714
+    },
+    {
+      "date": "2026-08-13 17:00:00+00:00",
+      "predicted_energy_next_hour": 0.3683190705475313,
+      "target_energy_next_hour": 0.128012337286065
+    },
+    {
       "date": "2026-08-13 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.785199860727025,
-      "target_energy_next_hour": 0.6698203072167096
+      "predicted_energy_next_hour": 0.4571475080041818,
+      "target_energy_next_hour": 0.0340970099863571
     },
     {
       "date": "2026-08-13 19:00:00+00:00",
-      "predicted_energy_next_hour": 0.3265559574317878,
-      "target_energy_next_hour": 0.0488079885497102
+      "predicted_energy_next_hour": 0.1850245751208325,
+      "target_energy_next_hour": 0.0002000303332254
     },
     {
       "date": "2026-08-13 20:00:00+00:00",
-      "predicted_energy_next_hour": 0.1542129714451279,
+      "predicted_energy_next_hour": 0.1116689441044186,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-13 21:00:00+00:00",
-      "predicted_energy_next_hour": 0.0818778896858721,
-      "target_energy_next_hour": 0.0001670477572599
+      "predicted_energy_next_hour": 0.1915161768461064,
+      "target_energy_next_hour": 0.0006488276398049
     },
     {
       "date": "2026-08-13 22:00:00+00:00",
-      "predicted_energy_next_hour": 0.08253753350656,
-      "target_energy_next_hour": 0.105037671466393
+      "predicted_energy_next_hour": 0.2438726543609483,
+      "target_energy_next_hour": 0.2089313411434254
     },
     {
       "date": "2026-08-13 23:00:00+00:00",
-      "predicted_energy_next_hour": 0.2806481351080449,
-      "target_energy_next_hour": 0.6493700307217359
+      "predicted_energy_next_hour": 0.524851196072926,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-14 00:00:00+00:00",
-      "predicted_energy_next_hour": 0.6013813985576523,
+      "predicted_energy_next_hour": 0.7085694809287765,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-14 01:00:00+00:00",
-      "predicted_energy_next_hour": 0.9007215492259136,
+      "predicted_energy_next_hour": 0.8649491045105094,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-14 02:00:00+00:00",
-      "predicted_energy_next_hour": 0.8994690437963597,
+      "predicted_energy_next_hour": 0.92600810416054,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-14 03:00:00+00:00",
-      "predicted_energy_next_hour": 0.9791710643659804,
+      "predicted_energy_next_hour": 1.0,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-14 04:00:00+00:00",
-      "predicted_energy_next_hour": 1.0,
-      "target_energy_next_hour": 1.0
-    },
-    {
-      "date": "2026-08-14 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.79,
-      "target_energy_next_hour": 1.0
-    },
-    {
-      "date": "2026-08-14 06:00:00+00:00",
-      "predicted_energy_next_hour": 0.88,
-      "target_energy_next_hour": 1.0
-    },
-    {
-      "date": "2026-08-14 07:00:00+00:00",
       "predicted_energy_next_hour": 0.99,
       "target_energy_next_hour": 1.0
     },
     {
-      "date": "2026-08-14 08:00:00+00:00",
+      "date": "2026-08-14 05:00:00+00:00",
       "predicted_energy_next_hour": 1.0,
       "target_energy_next_hour": 1.0
     },
     {
+      "date": "2026-08-14 06:00:00+00:00",
+      "predicted_energy_next_hour": 1.0,
+      "target_energy_next_hour": 1.0
+    },
+    {
+      "date": "2026-08-14 07:00:00+00:00",
+      "predicted_energy_next_hour": 1.0,
+      "target_energy_next_hour": 1.0
+    },
+    {
+      "date": "2026-08-14 08:00:00+00:00",
+      "predicted_energy_next_hour": 0.6679403864055073,
+      "target_energy_next_hour": 0.8393938262556674
+    },
+    {
       "date": "2026-08-14 09:00:00+00:00",
-      "predicted_energy_next_hour": 0.8498305423455652,
+      "predicted_energy_next_hour": 0.8133464308534465,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-14 10:00:00+00:00",
-      "predicted_energy_next_hour": 0.9022712397872804,
+      "predicted_energy_next_hour": 0.9007126554865253,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-14 11:00:00+00:00",
-      "predicted_energy_next_hour": 1.0,
+      "predicted_energy_next_hour": 0.9730531451403288,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-14 12:00:00+00:00",
-      "predicted_energy_next_hour": 0.988299219867138,
+      "predicted_energy_next_hour": 0.99,
       "target_energy_next_hour": 1.0
     },
     {
@@ -570,7 +570,7 @@
     },
     {
       "date": "2026-08-14 14:00:00+00:00",
-      "predicted_energy_next_hour": 0.99,
+      "predicted_energy_next_hour": 1.0,
       "target_energy_next_hour": 1.0
     },
     {
@@ -580,137 +580,137 @@
     },
     {
       "date": "2026-08-14 16:00:00+00:00",
-      "predicted_energy_next_hour": 0.5683280418615348,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.8206336110388185,
+      "target_energy_next_hour": 0.8698163970063033
     },
     {
       "date": "2026-08-14 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.7338465013083142,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.728365556185162,
+      "target_energy_next_hour": 0.9465939877052276
     },
     {
       "date": "2026-08-14 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.9484495589517744,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.627666115794494,
+      "target_energy_next_hour": 0.4858653052372764
     },
     {
       "date": "2026-08-14 19:00:00+00:00",
-      "predicted_energy_next_hour": 0.8172877915523113,
-      "target_energy_next_hour": 0.2747264124805121
+      "predicted_energy_next_hour": 0.3980269655097128,
+      "target_energy_next_hour": 0.0532612276787376
     },
     {
       "date": "2026-08-14 20:00:00+00:00",
-      "predicted_energy_next_hour": 0.4130126541405442,
-      "target_energy_next_hour": 0.0149329654326766
+      "predicted_energy_next_hour": 0.2579556633166613,
+      "target_energy_next_hour": 0.002522948140686
     },
     {
       "date": "2026-08-14 21:00:00+00:00",
-      "predicted_energy_next_hour": 0.1349354073942282,
-      "target_energy_next_hour": 0.0
+      "predicted_energy_next_hour": 0.1233998336656668,
+      "target_energy_next_hour": 0.0147546183798001
     },
     {
       "date": "2026-08-14 22:00:00+00:00",
-      "predicted_energy_next_hour": 0.123501270594336,
-      "target_energy_next_hour": 0.0009462720243957
+      "predicted_energy_next_hour": 0.1933318974769063,
+      "target_energy_next_hour": 0.1278394577694638
     },
     {
       "date": "2026-08-14 23:00:00+00:00",
-      "predicted_energy_next_hour": 0.2055442701708991,
-      "target_energy_next_hour": 0.2633217209065475
+      "predicted_energy_next_hour": 0.4708088721196876,
+      "target_energy_next_hour": 0.2370213849717581
     },
     {
       "date": "2026-08-15 00:00:00+00:00",
-      "predicted_energy_next_hour": 0.4969274028298469,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.4314481919880883,
+      "target_energy_next_hour": 0.0962360898257129
     },
     {
       "date": "2026-08-15 01:00:00+00:00",
-      "predicted_energy_next_hour": 0.6967064750157745,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.2516139376432334,
+      "target_energy_next_hour": 0.0226913060406525
     },
     {
       "date": "2026-08-15 02:00:00+00:00",
-      "predicted_energy_next_hour": 0.7276790448319561,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.178695487352823,
+      "target_energy_next_hour": 0.041275706772194
     },
     {
       "date": "2026-08-15 03:00:00+00:00",
-      "predicted_energy_next_hour": 0.8968063722328281,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.1904989783590818,
+      "target_energy_next_hour": 0.208281916668092
     },
     {
       "date": "2026-08-15 04:00:00+00:00",
-      "predicted_energy_next_hour": 0.9919485997678944,
-      "target_energy_next_hour": 1.0
+      "predicted_energy_next_hour": 0.4105177793525699,
+      "target_energy_next_hour": 0.8549486649139155
     },
     {
       "date": "2026-08-15 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.99,
+      "predicted_energy_next_hour": 0.7405992577870886,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 06:00:00+00:00",
-      "predicted_energy_next_hour": 1.0,
+      "predicted_energy_next_hour": 0.8656388578707278,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 07:00:00+00:00",
-      "predicted_energy_next_hour": 0.99,
+      "predicted_energy_next_hour": 0.8931320999906817,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 08:00:00+00:00",
-      "predicted_energy_next_hour": 1.0,
+      "predicted_energy_next_hour": 0.9968251125638076,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 09:00:00+00:00",
-      "predicted_energy_next_hour": 0.91,
+      "predicted_energy_next_hour": 0.994149609933569,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 10:00:00+00:00",
-      "predicted_energy_next_hour": 0.78,
-      "target_energy_next_hour": 0.0
+      "predicted_energy_next_hour": 0.994149609933569,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 11:00:00+00:00",
-      "predicted_energy_next_hour": 0.42,
-      "target_energy_next_hour": 0.0
+      "predicted_energy_next_hour": 0.994149609933569,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 12:00:00+00:00",
-      "predicted_energy_next_hour": 0.2,
-      "target_energy_next_hour": 0.0
+      "predicted_energy_next_hour": 1.0,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 13:00:00+00:00",
-      "predicted_energy_next_hour": 0.07,
-      "target_energy_next_hour": 0.0
+      "predicted_energy_next_hour": 1.0,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 14:00:00+00:00",
-      "predicted_energy_next_hour": 0.07,
-      "target_energy_next_hour": 0.0
+      "predicted_energy_next_hour": 1.0,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 15:00:00+00:00",
-      "predicted_energy_next_hour": 0.01,
-      "target_energy_next_hour": 0.0
+      "predicted_energy_next_hour": 1.0,
+      "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-15 16:00:00+00:00",
-      "predicted_energy_next_hour": 0.01,
+      "predicted_energy_next_hour": 0.63,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-15 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
+      "predicted_energy_next_hour": 0.06,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-15 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.06,
+      "predicted_energy_next_hour": 0.01,
       "target_energy_next_hour": 0.0
     },
     {
@@ -805,7 +805,7 @@
     },
     {
       "date": "2026-08-16 13:00:00+00:00",
-      "predicted_energy_next_hour": 0.05,
+      "predicted_energy_next_hour": 0.04,
       "target_energy_next_hour": 0.0
     },
     {
@@ -830,7 +830,7 @@
     },
     {
       "date": "2026-08-16 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.11,
+      "predicted_energy_next_hour": 0.12,
       "target_energy_next_hour": 0.0
     },
     {
@@ -846,48 +846,38 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-10 00:00:00+00:00",
-      "predicted_energy_next_hour": 0.95,
-      "target_energy_next_hour": 1.0
-    },
-    {
-      "date": "2026-08-10 01:00:00+00:00",
-      "predicted_energy_next_hour": 0.78,
-      "target_energy_next_hour": 0.0
-    },
-    {
       "date": "2026-08-10 02:00:00+00:00",
       "predicted_energy_next_hour": 0.22,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 03:00:00+00:00",
-      "predicted_energy_next_hour": 0.17,
+      "predicted_energy_next_hour": 0.18,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 04:00:00+00:00",
-      "predicted_energy_next_hour": 0.01,
+      "predicted_energy_next_hour": 0.22,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-10 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.88,
+      "predicted_energy_next_hour": 0.63,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-10 06:00:00+00:00",
-      "predicted_energy_next_hour": 0.99,
+      "predicted_energy_next_hour": 0.98,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-10 07:00:00+00:00",
-      "predicted_energy_next_hour": 0.82,
+      "predicted_energy_next_hour": 0.91,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 08:00:00+00:00",
-      "predicted_energy_next_hour": 0.16,
+      "predicted_energy_next_hour": 0.17,
       "target_energy_next_hour": 0.0
     },
     {
@@ -932,12 +922,12 @@
     },
     {
       "date": "2026-08-10 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
+      "predicted_energy_next_hour": 0.01,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
+      "predicted_energy_next_hour": 0.01,
       "target_energy_next_hour": 0.0
     },
     {
@@ -947,7 +937,7 @@
     },
     {
       "date": "2026-08-10 20:00:00+00:00",
-      "predicted_energy_next_hour": 0.0,
+      "predicted_energy_next_hour": 0.01,
       "target_energy_next_hour": 0.0
     },
     {
@@ -957,16 +947,26 @@
     },
     {
       "date": "2026-08-10 22:00:00+00:00",
-      "predicted_energy_next_hour": 0.01,
+      "predicted_energy_next_hour": 0.0,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-10 23:00:00+00:00",
       "predicted_energy_next_hour": 0.0,
       "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-08-11 00:00:00+00:00",
+      "predicted_energy_next_hour": 0.0,
+      "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-08-11 01:00:00+00:00",
+      "predicted_energy_next_hour": 0.0,
+      "target_energy_next_hour": 0.0
     }
   ],
-  "wind_speed": 21.462143,
+  "wind_speed": 26.079037,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
