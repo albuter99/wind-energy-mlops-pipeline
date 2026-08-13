@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.5695209200172298,
-  "latest_target": 0.2828626642284829,
-  "latest_date": "2026-08-13 14:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 9.92 m/s, temperature of 25.40 °C, surface pressure of 1024.41 hPa, relative humidity of 31.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_prediction": 0.5001659553856911,
+  "latest_target": 0.4618970873851041,
+  "latest_date": "2026-08-13 15:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 8.91 m/s, temperature of 26.10 °C, surface pressure of 1024.11 hPa, relative humidity of 31.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
   "recommendation_level": "success",
-  "last_updated": "2026-08-13T15:10:49.448055+02:00",
-  "next_full_hour": "2026-08-13T16:00:00+02:00",
+  "last_updated": "2026-08-13T16:57:34.922532+02:00",
+  "next_full_hour": "2026-08-13T17:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-12 22:00:00+00:00",
@@ -85,32 +85,32 @@
     },
     {
       "date": "2026-08-13 13:00:00+00:00",
-      "predicted_energy_next_hour": 0.531691423702799,
+      "predicted_energy_next_hour": 0.5265888189743851,
       "target_energy_next_hour": 0.4554516148141405
     },
     {
       "date": "2026-08-13 14:00:00+00:00",
-      "predicted_energy_next_hour": 0.5695209200172298,
+      "predicted_energy_next_hour": 0.5235793528435164,
       "target_energy_next_hour": 0.2828626642284829
     },
     {
       "date": "2026-08-13 15:00:00+00:00",
-      "predicted_energy_next_hour": 0.4986762715426337,
+      "predicted_energy_next_hour": 0.5001659553856911,
       "target_energy_next_hour": 0.4618970873851041
     },
     {
       "date": "2026-08-13 16:00:00+00:00",
-      "predicted_energy_next_hour": 0.6345082328087797,
+      "predicted_energy_next_hour": 0.647739501549363,
       "target_energy_next_hour": 0.2514271714954268
     },
     {
       "date": "2026-08-13 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.4957245729317333,
+      "predicted_energy_next_hour": 0.5040946431307912,
       "target_energy_next_hour": 0.1449274157843713
     },
     {
       "date": "2026-08-13 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.3177588389378758,
+      "predicted_energy_next_hour": 0.31086631015376,
       "target_energy_next_hour": 0.3285585168877217
     },
     {
@@ -225,12 +225,12 @@
     },
     {
       "date": "2026-08-14 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.4726859332414468,
+      "predicted_energy_next_hour": 0.4576290155133939,
       "target_energy_next_hour": 0.0129775620608486
     },
     {
       "date": "2026-08-14 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.3641109222996893,
+      "predicted_energy_next_hour": 0.3788521650892786,
       "target_energy_next_hour": 0.2976723469478705
     },
     {
@@ -846,28 +846,23 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-13 14:00:00+00:00",
-      "predicted_energy_next_hour": 0.5695209200172298,
-      "target_energy_next_hour": 0.2828626642284829
-    },
-    {
       "date": "2026-08-13 15:00:00+00:00",
-      "predicted_energy_next_hour": 0.4986762715426337,
+      "predicted_energy_next_hour": 0.5001659553856911,
       "target_energy_next_hour": 0.4618970873851041
     },
     {
       "date": "2026-08-13 16:00:00+00:00",
-      "predicted_energy_next_hour": 0.6345082328087797,
+      "predicted_energy_next_hour": 0.647739501549363,
       "target_energy_next_hour": 0.2514271714954268
     },
     {
       "date": "2026-08-13 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.4957245729317333,
+      "predicted_energy_next_hour": 0.5040946431307912,
       "target_energy_next_hour": 0.1449274157843713
     },
     {
       "date": "2026-08-13 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.3177588389378758,
+      "predicted_energy_next_hour": 0.31086631015376,
       "target_energy_next_hour": 0.3285585168877217
     },
     {
@@ -964,9 +959,14 @@
       "date": "2026-08-14 13:00:00+00:00",
       "predicted_energy_next_hour": 0.988299219867138,
       "target_energy_next_hour": 1.0
+    },
+    {
+      "date": "2026-08-14 14:00:00+00:00",
+      "predicted_energy_next_hour": 0.9558056236272467,
+      "target_energy_next_hour": 1.0
     }
   ],
-  "wind_speed": 9.924524,
+  "wind_speed": 8.907917,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
