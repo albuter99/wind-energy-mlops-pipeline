@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.9081477520794924,
+  "latest_prediction": 0.9552175942734766,
   "latest_target": 1.0,
-  "latest_date": "2026-08-19 04:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 18.29 m/s, temperature of 13.75 °C, surface pressure of 999.59 hPa, relative humidity of 92.00%, and precipitation of 1.10 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_date": "2026-08-19 05:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 18.88 m/s, temperature of 13.85 °C, surface pressure of 998.59 hPa, relative humidity of 94.00%, and precipitation of 1.40 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
   "recommendation_level": "success",
-  "last_updated": "2026-08-19T05:49:58.441628+02:00",
-  "next_full_hour": "2026-08-19T06:00:00+02:00",
+  "last_updated": "2026-08-19T06:36:43.527442+02:00",
+  "next_full_hour": "2026-08-19T07:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-18 22:00:00+00:00",
@@ -846,11 +846,6 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-19 04:00:00+00:00",
-      "predicted_energy_next_hour": 0.9081477520794924,
-      "target_energy_next_hour": 1.0
-    },
-    {
       "date": "2026-08-19 05:00:00+00:00",
       "predicted_energy_next_hour": 0.9552175942734766,
       "target_energy_next_hour": 1.0
@@ -964,9 +959,14 @@
       "date": "2026-08-20 03:00:00+00:00",
       "predicted_energy_next_hour": 0.53,
       "target_energy_next_hour": 1.0
+    },
+    {
+      "date": "2026-08-20 04:00:00+00:00",
+      "predicted_energy_next_hour": 0.48,
+      "target_energy_next_hour": 1.0
     }
   ],
-  "wind_speed": 18.2873,
+  "wind_speed": 18.882696,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
