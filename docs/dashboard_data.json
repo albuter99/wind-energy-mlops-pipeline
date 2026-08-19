@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.8030707670039127,
-  "latest_target": 1.0,
-  "latest_date": "2026-08-19 18:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 22.06 m/s, temperature of 17.55 °C, surface pressure of 995.71 hPa, relative humidity of 91.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_prediction": 0.38,
+  "latest_target": 0.0,
+  "latest_date": "2026-08-19 19:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 24.32 m/s, temperature of 16.65 °C, surface pressure of 996.31 hPa, relative humidity of 92.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
   "recommendation_level": "success",
-  "last_updated": "2026-08-19T19:27:07.064229+02:00",
-  "next_full_hour": "2026-08-19T20:00:00+02:00",
+  "last_updated": "2026-08-19T20:35:29.907536+02:00",
+  "next_full_hour": "2026-08-19T21:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-18 22:00:00+00:00",
@@ -105,12 +105,12 @@
     },
     {
       "date": "2026-08-19 17:00:00+00:00",
-      "predicted_energy_next_hour": 0.874149609933569,
+      "predicted_energy_next_hour": 0.9,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-19 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.8030707670039127,
+      "predicted_energy_next_hour": 0.8330707670039126,
       "target_energy_next_hour": 1.0
     },
     {
@@ -165,7 +165,7 @@
     },
     {
       "date": "2026-08-20 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.97,
+      "predicted_energy_next_hour": 0.96,
       "target_energy_next_hour": 1.0
     },
     {
@@ -235,7 +235,7 @@
     },
     {
       "date": "2026-08-20 19:00:00+00:00",
-      "predicted_energy_next_hour": 0.515998907270647,
+      "predicted_energy_next_hour": 0.5257203782057246,
       "target_energy_next_hour": 0.6394231597550992
     },
     {
@@ -255,12 +255,12 @@
     },
     {
       "date": "2026-08-20 23:00:00+00:00",
-      "predicted_energy_next_hour": 0.7033172993171267,
+      "predicted_energy_next_hour": 0.7033444447175919,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-21 00:00:00+00:00",
-      "predicted_energy_next_hour": 0.916124953112037,
+      "predicted_energy_next_hour": 0.9106794692601784,
       "target_energy_next_hour": 1.0
     },
     {
@@ -310,12 +310,12 @@
     },
     {
       "date": "2026-08-21 10:00:00+00:00",
-      "predicted_energy_next_hour": 0.15,
+      "predicted_energy_next_hour": 0.14,
       "target_energy_next_hour": 0.0
     },
     {
       "date": "2026-08-21 11:00:00+00:00",
-      "predicted_energy_next_hour": 0.12,
+      "predicted_energy_next_hour": 0.1,
       "target_energy_next_hour": 0.0
     },
     {
@@ -846,11 +846,6 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-19 18:00:00+00:00",
-      "predicted_energy_next_hour": 0.8030707670039127,
-      "target_energy_next_hour": 1.0
-    },
-    {
       "date": "2026-08-19 19:00:00+00:00",
       "predicted_energy_next_hour": 0.38,
       "target_energy_next_hour": 0.0
@@ -902,7 +897,7 @@
     },
     {
       "date": "2026-08-20 05:00:00+00:00",
-      "predicted_energy_next_hour": 0.97,
+      "predicted_energy_next_hour": 0.96,
       "target_energy_next_hour": 1.0
     },
     {
@@ -964,9 +959,14 @@
       "date": "2026-08-20 17:00:00+00:00",
       "predicted_energy_next_hour": 0.4858581396321684,
       "target_energy_next_hour": 0.7895775099420508
+    },
+    {
+      "date": "2026-08-20 18:00:00+00:00",
+      "predicted_energy_next_hour": 0.4713950446843525,
+      "target_energy_next_hour": 0.8762791468819876
     }
   ],
-  "wind_speed": 22.059055,
+  "wind_speed": 24.320147,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
