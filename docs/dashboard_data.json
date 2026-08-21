@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.08,
+  "latest_prediction": 0.12,
   "latest_target": 0.0,
-  "latest_date": "2026-08-21 23:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 29.28 m/s, temperature of 14.75 °C, surface pressure of 1005.69 hPa, relative humidity of 81.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_date": "2026-08-22 00:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 29.13 m/s, temperature of 14.25 °C, surface pressure of 1005.58 hPa, relative humidity of 82.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Do not activate the turbines. Wind speed is too high and may exceed the safe operating range.",
   "recommendation_level": "danger",
-  "last_updated": "2026-08-22T00:25:06.538453+02:00",
-  "next_full_hour": "2026-08-22T01:00:00+02:00",
+  "last_updated": "2026-08-22T01:23:51.214833+02:00",
+  "next_full_hour": "2026-08-22T02:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-21 22:00:00+00:00",
@@ -35,7 +35,7 @@
     },
     {
       "date": "2026-08-22 03:00:00+00:00",
-      "predicted_energy_next_hour": 0.26,
+      "predicted_energy_next_hour": 0.27,
       "target_energy_next_hour": 0.0
     },
     {
@@ -140,7 +140,7 @@
     },
     {
       "date": "2026-08-23 00:00:00+00:00",
-      "predicted_energy_next_hour": 0.58,
+      "predicted_energy_next_hour": 0.59,
       "target_energy_next_hour": 1.0
     },
     {
@@ -846,11 +846,6 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-21 23:00:00+00:00",
-      "predicted_energy_next_hour": 0.08,
-      "target_energy_next_hour": 0.0
-    },
-    {
       "date": "2026-08-22 00:00:00+00:00",
       "predicted_energy_next_hour": 0.12,
       "target_energy_next_hour": 0.0
@@ -867,7 +862,7 @@
     },
     {
       "date": "2026-08-22 03:00:00+00:00",
-      "predicted_energy_next_hour": 0.26,
+      "predicted_energy_next_hour": 0.27,
       "target_energy_next_hour": 0.0
     },
     {
@@ -964,9 +959,14 @@
       "date": "2026-08-22 22:00:00+00:00",
       "predicted_energy_next_hour": 0.3,
       "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-08-22 23:00:00+00:00",
+      "predicted_energy_next_hour": 0.16,
+      "target_energy_next_hour": 0.0
     }
   ],
-  "wind_speed": 29.278399,
+  "wind_speed": 29.131903,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
