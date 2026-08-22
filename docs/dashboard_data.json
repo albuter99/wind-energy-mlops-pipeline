@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.21,
-  "latest_target": 0.0,
-  "latest_date": "2026-08-22 20:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 29.13 m/s, temperature of 16.10 °C, surface pressure of 1008.59 hPa, relative humidity of 84.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_prediction": 0.17,
+  "latest_target": 1.0,
+  "latest_date": "2026-08-22 21:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 28.30 m/s, temperature of 15.65 °C, surface pressure of 1008.89 hPa, relative humidity of 87.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Do not activate the turbines. Wind speed is too high and may exceed the safe operating range.",
   "recommendation_level": "danger",
-  "last_updated": "2026-08-22T21:22:06.211492+02:00",
-  "next_full_hour": "2026-08-22T22:00:00+02:00",
+  "last_updated": "2026-08-22T22:22:37.851621+02:00",
+  "next_full_hour": "2026-08-22T23:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-21 22:00:00+00:00",
@@ -180,7 +180,7 @@
     },
     {
       "date": "2026-08-23 08:00:00+00:00",
-      "predicted_energy_next_hour": 0.4,
+      "predicted_energy_next_hour": 0.39,
       "target_energy_next_hour": 1.0
     },
     {
@@ -295,17 +295,17 @@
     },
     {
       "date": "2026-08-24 07:00:00+00:00",
-      "predicted_energy_next_hour": 0.3103964537975655,
+      "predicted_energy_next_hour": 0.2990085455862702,
       "target_energy_next_hour": 0.1796158509194277
     },
     {
       "date": "2026-08-24 08:00:00+00:00",
-      "predicted_energy_next_hour": 0.2443691551963515,
+      "predicted_energy_next_hour": 0.2451281409747133,
       "target_energy_next_hour": 0.0501238909946451
     },
     {
       "date": "2026-08-24 09:00:00+00:00",
-      "predicted_energy_next_hour": 0.1469573244735726,
+      "predicted_energy_next_hour": 0.1454070995334953,
       "target_energy_next_hour": 0.0174832047763028
     },
     {
@@ -315,17 +315,17 @@
     },
     {
       "date": "2026-08-24 11:00:00+00:00",
-      "predicted_energy_next_hour": 0.050984818299444,
+      "predicted_energy_next_hour": 0.0522794379844407,
       "target_energy_next_hour": 0.0008476380194391
     },
     {
       "date": "2026-08-24 12:00:00+00:00",
-      "predicted_energy_next_hour": 0.065859626620797,
+      "predicted_energy_next_hour": 0.0658528257957442,
       "target_energy_next_hour": 0.0004724520690918
     },
     {
       "date": "2026-08-24 13:00:00+00:00",
-      "predicted_energy_next_hour": 0.1347912857943338,
+      "predicted_energy_next_hour": 0.1347100161875406,
       "target_energy_next_hour": 8.581828155655246e-09
     },
     {
@@ -385,7 +385,7 @@
     },
     {
       "date": "2026-08-25 01:00:00+00:00",
-      "predicted_energy_next_hour": 0.4154097397881544,
+      "predicted_energy_next_hour": 0.4244551828221414,
       "target_energy_next_hour": 0.2888462904835401
     },
     {
@@ -846,11 +846,6 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-22 20:00:00+00:00",
-      "predicted_energy_next_hour": 0.21,
-      "target_energy_next_hour": 0.0
-    },
-    {
       "date": "2026-08-22 21:00:00+00:00",
       "predicted_energy_next_hour": 0.17,
       "target_energy_next_hour": 1.0
@@ -907,7 +902,7 @@
     },
     {
       "date": "2026-08-23 08:00:00+00:00",
-      "predicted_energy_next_hour": 0.4,
+      "predicted_energy_next_hour": 0.39,
       "target_energy_next_hour": 1.0
     },
     {
@@ -964,9 +959,14 @@
       "date": "2026-08-23 19:00:00+00:00",
       "predicted_energy_next_hour": 0.98,
       "target_energy_next_hour": 1.0
+    },
+    {
+      "date": "2026-08-23 20:00:00+00:00",
+      "predicted_energy_next_hour": 0.99,
+      "target_energy_next_hour": 1.0
     }
   ],
-  "wind_speed": 29.125565,
+  "wind_speed": 28.30067,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
