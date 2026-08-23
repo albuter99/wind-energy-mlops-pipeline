@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.74,
+  "latest_prediction": 0.77,
   "latest_target": 1.0,
-  "latest_date": "2026-08-23 07:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 24.35 m/s, temperature of 15.60 °C, surface pressure of 1011.98 hPa, relative humidity of 76.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_date": "2026-08-23 08:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 23.41 m/s, temperature of 15.95 °C, surface pressure of 1012.68 hPa, relative humidity of 76.00%, and precipitation of 0.30 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
   "recommendation_level": "success",
-  "last_updated": "2026-08-23T08:40:27.053445+02:00",
-  "next_full_hour": "2026-08-23T09:00:00+02:00",
+  "last_updated": "2026-08-23T09:33:12.911166+02:00",
+  "next_full_hour": "2026-08-23T10:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-22 22:00:00+00:00",
@@ -846,11 +846,6 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-23 07:00:00+00:00",
-      "predicted_energy_next_hour": 0.74,
-      "target_energy_next_hour": 1.0
-    },
-    {
       "date": "2026-08-23 08:00:00+00:00",
       "predicted_energy_next_hour": 0.77,
       "target_energy_next_hour": 1.0
@@ -964,9 +959,14 @@
       "date": "2026-08-24 06:00:00+00:00",
       "predicted_energy_next_hour": 0.7768893406674918,
       "target_energy_next_hour": 0.3473539773585216
+    },
+    {
+      "date": "2026-08-24 07:00:00+00:00",
+      "predicted_energy_next_hour": 0.2845626551055954,
+      "target_energy_next_hour": 0.0696885184845915
     }
   ],
-  "wind_speed": 24.346712,
+  "wind_speed": 23.413517,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
