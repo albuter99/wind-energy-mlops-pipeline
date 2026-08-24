@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.9098986086014116,
+  "latest_prediction": 0.9509263790229632,
   "latest_target": 1.0,
-  "latest_date": "2026-08-24 20:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 14.09 m/s, temperature of 17.65 °C, surface pressure of 1019.68 hPa, relative humidity of 67.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_date": "2026-08-24 21:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 14.39 m/s, temperature of 16.75 °C, surface pressure of 1019.88 hPa, relative humidity of 74.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
   "recommendation_level": "success",
-  "last_updated": "2026-08-24T21:29:18.234774+02:00",
-  "next_full_hour": "2026-08-24T22:00:00+02:00",
+  "last_updated": "2026-08-24T22:30:22.717180+02:00",
+  "next_full_hour": "2026-08-24T23:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-23 22:00:00+00:00",
@@ -130,12 +130,12 @@
     },
     {
       "date": "2026-08-24 22:00:00+00:00",
-      "predicted_energy_next_hour": 0.696827560277461,
+      "predicted_energy_next_hour": 0.752847036839317,
       "target_energy_next_hour": 0.5087501536605993
     },
     {
       "date": "2026-08-24 23:00:00+00:00",
-      "predicted_energy_next_hour": 0.3914082062475663,
+      "predicted_energy_next_hour": 0.3904586902535884,
       "target_energy_next_hour": 0.3362891088456729
     },
     {
@@ -185,7 +185,7 @@
     },
     {
       "date": "2026-08-25 09:00:00+00:00",
-      "predicted_energy_next_hour": 0.5530830064037413,
+      "predicted_energy_next_hour": 0.5481544672719185,
       "target_energy_next_hour": 0.5538755853351421
     },
     {
@@ -846,23 +846,18 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-24 20:00:00+00:00",
-      "predicted_energy_next_hour": 0.9098986086014116,
-      "target_energy_next_hour": 1.0
-    },
-    {
       "date": "2026-08-24 21:00:00+00:00",
       "predicted_energy_next_hour": 0.9509263790229632,
       "target_energy_next_hour": 1.0
     },
     {
       "date": "2026-08-24 22:00:00+00:00",
-      "predicted_energy_next_hour": 0.696827560277461,
+      "predicted_energy_next_hour": 0.752847036839317,
       "target_energy_next_hour": 0.5087501536605993
     },
     {
       "date": "2026-08-24 23:00:00+00:00",
-      "predicted_energy_next_hour": 0.3914082062475663,
+      "predicted_energy_next_hour": 0.3904586902535884,
       "target_energy_next_hour": 0.3362891088456729
     },
     {
@@ -912,7 +907,7 @@
     },
     {
       "date": "2026-08-25 09:00:00+00:00",
-      "predicted_energy_next_hour": 0.5530830064037413,
+      "predicted_energy_next_hour": 0.5481544672719185,
       "target_energy_next_hour": 0.5538755853351421
     },
     {
@@ -964,9 +959,14 @@
       "date": "2026-08-25 19:00:00+00:00",
       "predicted_energy_next_hour": 0.958726414668332,
       "target_energy_next_hour": 1.0
+    },
+    {
+      "date": "2026-08-25 20:00:00+00:00",
+      "predicted_energy_next_hour": 0.94030657144837,
+      "target_energy_next_hour": 1.0
     }
   ],
-  "wind_speed": 14.092301,
+  "wind_speed": 14.387353,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
