@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.0070820460111417,
+  "latest_prediction": 0.0144502646074853,
   "latest_target": 0.0,
-  "latest_date": "2026-08-24 10:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 2.34 m/s, temperature of 20.20 °C, surface pressure of 1019.99 hPa, relative humidity of 59.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_date": "2026-08-24 11:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 1.83 m/s, temperature of 21.85 °C, surface pressure of 1020.00 hPa, relative humidity of 49.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Do not activate the turbines. Wind speed is too low for profitable operation.",
   "recommendation_level": "danger",
-  "last_updated": "2026-08-24T11:47:45.233321+02:00",
-  "next_full_hour": "2026-08-24T12:00:00+02:00",
+  "last_updated": "2026-08-24T12:36:56.112681+02:00",
+  "next_full_hour": "2026-08-24T13:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-23 22:00:00+00:00",
@@ -846,11 +846,6 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-24 10:00:00+00:00",
-      "predicted_energy_next_hour": 0.0070820460111417,
-      "target_energy_next_hour": 0.0
-    },
-    {
       "date": "2026-08-24 11:00:00+00:00",
       "predicted_energy_next_hour": 0.0144502646074853,
       "target_energy_next_hour": 0.0
@@ -964,9 +959,14 @@
       "date": "2026-08-25 09:00:00+00:00",
       "predicted_energy_next_hour": 0.5741684745700844,
       "target_energy_next_hour": 0.7830068161995976
+    },
+    {
+      "date": "2026-08-25 10:00:00+00:00",
+      "predicted_energy_next_hour": 0.650322951272059,
+      "target_energy_next_hour": 1.0
     }
   ],
-  "wind_speed": 2.3406944,
+  "wind_speed": 1.8316731,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
