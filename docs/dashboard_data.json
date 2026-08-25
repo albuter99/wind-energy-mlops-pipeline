@@ -1,12 +1,12 @@
 {
-  "latest_prediction": 0.6732799590726823,
-  "latest_target": 0.088961979014417,
-  "latest_date": "2026-08-25 07:00:00+00:00",
-  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 12.75 m/s, temperature of 16.40 °C, surface pressure of 1020.28 hPa, relative humidity of 61.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
+  "latest_prediction": 0.1777580552184074,
+  "latest_target": 0.2575818390504159,
+  "latest_date": "2026-08-25 08:00:00+00:00",
+  "weather_summary": "Forecast conditions in Aalborg indicate a wind speed of 7.02 m/s, temperature of 18.40 °C, surface pressure of 1020.58 hPa, relative humidity of 62.00%, and precipitation of 0.00 mm. These forecast conditions are used to estimate next-hour theoretical wind energy output.",
   "recommendation": "Activate the turbines. Conditions are within the operating range and predicted theoretical energy is sufficient.",
   "recommendation_level": "success",
-  "last_updated": "2026-08-25T08:47:57.792541+02:00",
-  "next_full_hour": "2026-08-25T09:00:00+02:00",
+  "last_updated": "2026-08-25T09:43:32.435818+02:00",
+  "next_full_hour": "2026-08-25T10:00:00+02:00",
   "historical": [
     {
       "date": "2026-08-24 22:00:00+00:00",
@@ -846,11 +846,6 @@
   ],
   "forecast": [
     {
-      "date": "2026-08-25 07:00:00+00:00",
-      "predicted_energy_next_hour": 0.6732799590726823,
-      "target_energy_next_hour": 0.088961979014417
-    },
-    {
       "date": "2026-08-25 08:00:00+00:00",
       "predicted_energy_next_hour": 0.1777580552184074,
       "target_energy_next_hour": 0.2575818390504159
@@ -964,9 +959,14 @@
       "date": "2026-08-26 06:00:00+00:00",
       "predicted_energy_next_hour": 0.1115442573862449,
       "target_energy_next_hour": 0.0
+    },
+    {
+      "date": "2026-08-26 07:00:00+00:00",
+      "predicted_energy_next_hour": 0.0169551972124004,
+      "target_energy_next_hour": 0.0013905454878737
     }
   ],
-  "wind_speed": 12.749489,
+  "wind_speed": 7.0176983,
   "feature_importance": [
     {
       "feature": "wind_speed_80m",
